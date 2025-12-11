@@ -1,0 +1,7 @@
+{
+  "name": "finanzApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
