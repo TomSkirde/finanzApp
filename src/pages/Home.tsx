@@ -1,6 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Home.css';
 import { PortfolioTracker } from '../components/PortfolioTracker';
+import { Predictor } from '../components/Predictor';
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>  
              <PortfolioTracker></PortfolioTracker>
+             <Predictor></Predictor>
       </IonContent>
     </IonPage>
   );
