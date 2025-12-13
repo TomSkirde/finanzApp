@@ -2,7 +2,8 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import './Home.css';
 import { PortfolioTracker } from '../components/PortfolioTracker';
 import { PredictorWrapper } from '../components/PredictorWrapper';
-const Home: React.FC = () => {
+
+export const Home = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -18,4 +19,3 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
