@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import { person , home, settings } from "ionicons/icons";
 import {Home} from "./pages/Home";
-
+import {Settings} from "./pages/Settings";
 
 export const Tabs = () => {
   return (
@@ -20,7 +20,7 @@ export const Tabs = () => {
           <Home />
         </Route>
         <Route exact path="/tabs/tab2">
-          <Home />
+          <Settings />
         </Route>
         <Route path="/tabs/tab3">
           <Home />
