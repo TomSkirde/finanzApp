@@ -2,6 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import './Home.css';
 import { PortfolioTracker } from '../components/PortfolioTracker';
 import { PredictorWrapper } from '../components/PredictorWrapper';
+import { Investments } from '../components/Investments';
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <IonContent fullscreen>  
              <PortfolioTracker></PortfolioTracker>
              <PredictorWrapper className='mt-5'></PredictorWrapper>
+             <Investments></Investments>
       </IonContent>
     </IonPage>
   );

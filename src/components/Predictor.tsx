@@ -15,12 +15,17 @@ export const Predictor = () => {
   }, [interest, years]);
   return (
     <>
-      <div className="flex flex-col items-center">
-        <div className="flex ">
+    <div className="flex justify-center ">
           <span></span>
           <span>{prediction}</span>
         </div>
-        <div className="flex w-[50%] py-5">
+      <div className="flex flex-col items-start px-2">
+        
+        <div className="flex w-[80%]">
+        <p className="self-center">
+             Interest per Year
+            </p>
+        <div className="flex w-[80%] py-5">
           <IonRange
             aria-label="Interest"
             value={interest}
@@ -31,11 +36,8 @@ export const Predictor = () => {
               const newInterest = detail.value as number;
               setInterest(newInterest);
             }}
-          >
-            <p slot="label">
-             Interest per Year
-            </p>
-          </IonRange>
+          />
+        </div>
         </div>
         <div className="flex w-[50%] py-5">
           <IonRange
